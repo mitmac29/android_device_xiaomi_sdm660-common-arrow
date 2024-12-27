@@ -37,6 +37,12 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
 TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := clang-r383902b1
+TARGET_CLANG_PREBUILTS_VERSION := clang-r383902b1
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-r383902b1
+TARGET_KERNEL_ADDITIONAL_FLAGS := \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument" \
+    LLVM=1 LLVM_IAS=1
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true

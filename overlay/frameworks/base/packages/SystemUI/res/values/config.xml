@@ -33,6 +33,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- Enable doze mode -->
     <bool name="doze_display_state_supported">true</bool>
 
+   <!-- Charging info current divider, if needed -->
+    <integer name="config_currentInfoDivider" translatable="true">1000</integer>
+
+   <!-- Update battery info every second when device is charging -->
+    <bool name="config_alternateFastchargeInfoUpdate">true</bool>
+
     <!-- Default no. of QS tile rows and columns -->
     <integer name="config_qs_columns_portrait">4</integer>
     <integer name="config_qs_rows_portrait">2</integer>

@@ -5,7 +5,7 @@
 #
 
 COMMON_PATH := device/xiaomi/sdm660-common
-
+TARGET_DISABLE_EPPE=true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 TARGET_NO_BOOTLOADER := true
